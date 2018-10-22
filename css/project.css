@@ -15,7 +15,7 @@
 }
 html{
     font-size: 16px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: Poppins,Roboto, Helvetica, Arial, sans-serif;
     /* change this font stack to your own choices */
     line-height: 1.5;
 }
@@ -37,45 +37,66 @@ li{
 img{
     width: 25%;
 }
+.subnav dl dd a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 
 /*************************************************
             HEADER
 *************************************************/
 header{
-    padding:1rem 2rem;
+    padding:2rem 2rem;
     color: black;
 }
+
 header > h1{
-    
+    color: rgb(255,255,255);
 }
 header > h2{
-    
+    color: rgb(200,200,200);
+}
+.mast{
+    background-image: url(../img/600.jpg);
+    height: 200px;
 }
 /*************************************************
             NAVMENU
 *************************************************/
-nav{
+.mainnav{
     padding:1rem 2rem;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right:3rem;
 }
 nav > a,
 nav > a:visited,
 nav > a:link{
-    
+    font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
+    text-decoration:none;
+    font-weight: 1600;
 }
 nav > a:active,
 nav > a:focus,
 nav > a:hover{
     
 }
+.main-link{
+    color: black;
+}
 
 /*************************************************
             MAIN CONTENT
 *************************************************/
 main{
-    padding:1rem 2rem;
+    padding:2rem 2rem;
+    display: flex;
+
 }
 section{
-    
+    margin-right: 1em;
 }
 section p{
     
@@ -83,15 +104,35 @@ section p{
 section p img{
     
 }
-
+img[alt='first-story image']{
+    display: block;
+    background-image: url(../img/600.jpg);
+}
+p{
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
 /*************************************************
             FOOTER
 *************************************************/
 footer{
-    padding:1rem 2rem;
+    font-size: 1em;
+    display: flex;
+    background-color:  rgb(80, 80, 80);
+    border-top:3px solid hsl(200, 100%, 50%);
+    padding-top: 2em;
+    justify-content: space-between;
 }
-.foot nav{
-    
+.docs{
+    text-decoration:none; 
+}
+.subnav >a{
+    display: flex;
+    justify-content: space-between;
+    text-decoration:none;
+}
+.channels{
+//    border-left: 2px solid hsl(200, 100%, 50%);
 }
 .foot section{
     
@@ -103,7 +144,8 @@ footer{
     
 }
 .foot dd{
-    
+    font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
+}
 }
 .foot dd a,
 .foot dd a:visited{
@@ -114,15 +156,218 @@ footer{
 .foot dd a:hover{
     
 }
+
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
-    
+    main{
+        padding:0rem 2rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav{
+        padding:0rem 2rem;
+        background-color:  rgb(80, 80, 80);
+        display: flex;
+        flex-flow: column;
+        font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
+        text-decoration:none;
+        font-size: 2em;
+    }
+    .main-link{
+        border-bottom: 2px solid #888888;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(133, 100%, 25%);
+    }
+    footer{
+        padding:1rem 1rem;
+        font-size: 0.5em;
+        display: flex;
+        flex-flow: column;
+    }
+    .foot nav{
+        display: flex;
+        flex-flow:row;
+        justify-content: space-between;
+    }
+    .form-box{
+        display: flex;
+        flex-flow: column;
+    }
+    .footer{
+        border-top:3px solid hsl(133, 100%, 25%);
+        text-decoration: none; 
+        justify-content:space-between;
+    }
+    .foot dd a:active,
+    .foot dd a:focus,
+    .foot dd a:hover{
+        color: hsl(133, 100%, 25%);
+        font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
+    }
+    .foot dd{
+        text-decoration:none;
+    }
+    .comments{
+        order: -1;
+    }
+    textarea{
+        height:10em;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(137, 100%, 24%);
+    }
+    .mast{
+        border-top: 1em solid hsl(137, 100%, 24%);
+    }
+    section > h1{
+        color: hsl(137, 100%, 24%);
+    }
+    section > h2{
+        color: hsl(137, 100%, 24%);
+    }
+    footer{
+        border-top:3px solid hsl(137, 100%, 24%);
+    }
+    img{
+        width:50%;
+        float: left;
+        margin-right: 1em;
+    }
+
 }
 @media (min-width: 600px) and (max-width:999px){
-    
+    main{
+        padding:2em 2em;
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    .minor-segment{
+        width: 43vw;
+        margin-left: 0px;
+        margin-right: 0px;;
+    }
+    .comments{
+        width: 50vw;
+    }
+    .foot nav{
+        padding: 0em 4em;
+        width:50vw;
+    }
+    .foot{
+            padding:1em 2em;
+    }
+    .foot nav{
+        padding: 0em 4em;
+        width:50vw;
+    }
+    .subnav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-box{
+        display: flex;
+        flex-flow: column;
+        padding-right: 2em;
+        margin-bottom: 1em;
+    }
+    textarea{
+        height:10em;
+    }
+    .mast{
+        border-top: 1em solid hsl(194, 100%, 35%);
+    }
+    section > h1{
+        color: hsl(194, 100%, 35%);
+    }
+    section > h2{
+        color: hsl(194, 100%, 35%);
+    }
+    footer{
+        border-top:3px solid hsl(194, 100%, 35%);
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(194, 100%, 35%);
+    }
+    img{
+        width:50%;
+        float: left;
+        margin-right: 1em;
+    }
+    [alt="second story image"]{
+        width:100%;
+    }
+    [alt="third story image"]{
+        width:100%;
+    }
+    input{
+        margin-bottom: 3px;
+    }
 }
 @media (min-width: 1000px){
-    
+    .mast{
+        border-top: 1em solid hsl(44, 100%, 35%);
+    }
+
+    section > h1{
+        color: hsl(44, 100%, 35%);
+    }
+    section > h2{
+        color: hsl(44, 100%, 35%);
+    }
+    footer{
+        border-top:3px solid hsl(44, 100%, 35%);
+    }
+    .comments{
+        width: 50vw;
+    }
+    .foot nav{
+        padding: 0em 4em;
+        width:50vw;
+    }
+    .foot nav{
+        padding: 0em 4em;
+        width:50vw;
+    }
+    .subnav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-box{
+        display: flex;
+        flex-flow: column;
+        padding-right: 2em;
+        margin-bottom: 1em;
+    }
+    textarea{
+        height:10em;
+    }
+    nav > a:active,
+    nav > a:focus,
+    nav > a:hover{
+        color: hsl(44, 100%, 35%);
+    }
+    img{
+        width:50%;
+        float: left;
+        margin-right: 1em;
+    }
+    input{
+        margin-bottom: 3px;
+    }
+    .mast{
+        background-image: url(../img/600.jpg);
+        height: auto;
+        background-size: 100vw;
+    }
 }
