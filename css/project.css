@@ -84,9 +84,11 @@ nav > a:hover{
     
 }
 .main-link{
-    color: black;
+    color: rgb(255,255,255);
 }
-
+dt{
+        color: rgb(200,200,200);
+}
 /*************************************************
             MAIN CONTENT
 *************************************************/
@@ -156,11 +158,18 @@ footer{
 .foot dd a:hover{
     
 }
+button{
+    width: 35%;
+    margin-left: 65%;
+}
 
 /*************************************************
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
+    .minor-segment{
+        margin-top: 1em;
+    }
     main{
         padding:0rem 2rem;
         display: flex;
@@ -229,9 +238,11 @@ footer{
     }
     section > h1{
         color: hsl(137, 100%, 24%);
+        font-size: 1em;
     }
     section > h2{
         color: hsl(137, 100%, 24%);
+        font-size: 1em;
     }
     footer{
         border-top:3px solid hsl(137, 100%, 24%);
@@ -240,6 +251,12 @@ footer{
         width:50%;
         float: left;
         margin-right: 1em;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size:1rem;
     }
 
 }
@@ -254,6 +271,7 @@ footer{
         width: 43vw;
         margin-left: 0px;
         margin-right: 0px;;
+        margin-top: 2em;
     }
     .comments{
         width: 50vw;
@@ -369,5 +387,8 @@ footer{
         background-image: url(../img/600.jpg);
         height: auto;
         background-size: 100vw;
+    }
+    .minor-segment{
+        margin-left: 1em;
     }
 }
