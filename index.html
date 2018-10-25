@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>MAD9013 Responsive Project</title>
     <meta name="viewport" content="width=device-width" />
-    <meta http-equiv="Content-Security-Policy" 
-    content="default-src 'self' data: gap: ws: https://ssl.gstatic.com; 
-    style-src 'self' https://fonts.googleapis.com; 
+    <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' data: gap: ws: https://ssl.gstatic.com;
+    style-src 'self' https://fonts.googleapis.com;
     font-src 'self' data: https://fonts.gstatic.com;
-    media-src *; 
+    media-src *;
     img-src 'self' data: content:;">
     <link rel="stylesheet" href="css/project.css" />
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Poppins|Roboto+Mono|Ubuntu" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|PT+Sans|Poppins|Roboto+Mono|Ubuntu" rel="stylesheet">
+
 </head>
 <body>
     <div class="container">
@@ -30,18 +30,39 @@
         <main class="primary">
             <section class="first segment">
                 <h1>Primary Story Heading</h1>
-                <p><img src="./img/200.jpg" alt="first story image" /> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis adipisci autem in vitae ullam porro laudantium, harum cumque cum incidunt ex, perspiciatis accusantium? Impedit obcaecati, veniam amet nemo voluptas unde.</p>
+                <p>
+                <picture>
+                  <source srcset="img/large/200.jpg" media="(min-width:1000px)">
+                  <source srcset="img/mid/200.jpg" media="(min-width:600px)"/>
+                  <source srcset="img/small/200.jpg" media="(min-width:400px)"/>
+                  <img src="img/mid/200.jpg" alt="first story image"/>
+                </picture>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis adipisci autem in vitae ullam porro laudantium, harum cumque cum incidunt ex, perspiciatis accusantium? Impedit obcaecati, veniam amet nemo voluptas unde.</p>
                 <p>Libero sequi necessitatibus enim cumque, ab obcaecati, autem fuga, beatae est, itaque atque aspernatur minima dolore cupiditate ullam incidunt sunt quidem. Totam eius voluptas, sint, quos quia obcaecati! Vitae, expedita.</p>
                 <p>Dolores impedit earum, numquam laborum eos tenetur sed officiis iure veniam autem ut tempore eum excepturi dolorum aspernatur hic porro animi sapiente eveniet ab! Facilis natus earum nesciunt, sit expedita.</p>
             </section>
             <section class="second segment minor-segment">
                 <h2>Another Heading</h2>
-                <p><img src="./img/201.jpg" alt="second story image" /> Eaque atque ratione maxime suscipit maiores similique, qui vitae earum corporis recusandae dolores reprehenderit, perferendis! Harum nisi odio quam obcaecati quisquam numquam quas impedit quod optio? Vel rem, quaerat adipisci.</p>
+                <p>
+                  <picture>
+                    <source srcset="img/large/201.jpg" media="(min-width:1000px)"></source>
+                    <source srcset="img/mid/201.jpg" media="(min-width:600px)"></source>
+                    <source srcset="img/small/201.jpg" media="(min-width:400px)"></source>
+                      <img src="img/mid/201.jpg" alt="first story image"/>
+                  </picture>
+                Eaque atque ratione maxime suscipit maiores similique, qui vitae earum corporis recusandae dolores reprehenderit, perferendis! Harum nisi odio quam obcaecati quisquam numquam quas impedit quod optio? Vel rem, quaerat adipisci.</p>
                 <p>Libero sequi necessitatibus enim cumque, ab obcaecati, autem fuga, beatae est, itaque atque aspernatur minima dolore cupiditate ullam incidunt sunt quidem. Totam eius voluptas, sint, quos quia obcaecati! Vitae, expedita.</p>
             </section>
             <section class="third segment minor-segment">
                 <h2>Important Things</h2>
-                <p><img src="./img/211.jpg" alt="third story image" /> Cupiditate tempora enim aspernatur velit, itaque, sunt consequuntur. Repellendus repellat quisquam commodi maiores tempore, atque numquam minima iusto beatae nam possimus praesentium, quo obcaecati veritatis blanditiis dolorum. Odio, assumenda, ex?</p>
+                <p>
+                  <picture>
+                    <source srcset="img/large/211.jpg" media="(min-width:1000px)"></source>
+                    <source srcset="img/mid/211.jpg" media="(min-width:600px)"></source>
+                    <source srcset="img/small/211.jpg" media="(min-width:400px)"></source>
+                      <img src="img/mid/211.jpg" alt="first story image"/>
+                  </picture>
+                Cupiditate tempora enim aspernatur velit, itaque, sunt consequuntur. Repellendus repellat quisquam commodi maiores tempore, atque numquam minima iusto beatae nam possimus praesentium, quo obcaecati veritatis blanditiis dolorum. Odio, assumenda, ex?</p>
                 <p>Dolores impedit earum, numquam laborum eos tenetur sed officiis iure veniam autem ut tempore eum excepturi dolorum aspernatur hic porro animi sapiente eveniet ab! Facilis natus earum nesciunt, sit expedita.</p>
             </section>
         </main>

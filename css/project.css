@@ -20,19 +20,19 @@ html{
     line-height: 1.5;
 }
 p{
-    
+
 }
 a{
-    
+
 }
 ul{
-    
+
 }
 ol{
-    
+
 }
 li{
-    
+
 }
 img{
     width: 25%;
@@ -57,7 +57,7 @@ header > h2{
     color: rgb(200,200,200);
 }
 .mast{
-    background-image: url(../img/600.jpg);
+    background-image: url(../img/mid/600.jpg);
     height: 200px;
 }
 /*************************************************
@@ -81,7 +81,7 @@ nav > a:link{
 nav > a:active,
 nav > a:focus,
 nav > a:hover{
-    
+
 }
 .main-link{
     color: rgb(255,255,255);
@@ -101,10 +101,10 @@ section{
     margin-right: 1em;
 }
 section p{
-    
+
 }
 section p img{
-    
+
 }
 img[alt='first-story image']{
     display: block;
@@ -126,7 +126,7 @@ footer{
     justify-content: space-between;
 }
 .docs{
-    text-decoration:none; 
+    text-decoration:none;
 }
 .subnav >a{
     display: flex;
@@ -137,13 +137,13 @@ footer{
 //    border-left: 2px solid hsl(200, 100%, 50%);
 }
 .foot section{
-    
+
 }
 .foot dl{
-    
+
 }
 .foot dt{
-    
+
 }
 .foot dd{
     font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
@@ -151,12 +151,12 @@ footer{
 }
 .foot dd a,
 .foot dd a:visited{
-    
+
 }
 .foot dd a:active,
 .foot dd a:focus,
 .foot dd a:hover{
-    
+
 }
 button{
     width: 35%;
@@ -210,7 +210,7 @@ button{
     }
     .footer{
         border-top:3px solid hsl(133, 100%, 25%);
-        text-decoration: none; 
+        text-decoration: none;
         justify-content:space-between;
     }
     .foot dd a:active,
@@ -258,7 +258,10 @@ button{
     h2{
         font-size:1rem;
     }
-
+    .mast{
+        background-image: url(../img/small/600.jpg);
+        height: 200px;
+    }
 }
 @media (min-width: 600px) and (max-width:999px){
     main{
@@ -333,6 +336,10 @@ button{
     }
 }
 @media (min-width: 1000px){
+  .mast{
+      background-image: url(../img/large/600.jpg);
+      height: 200px;
+  }
     .mast{
         border-top: 1em solid hsl(44, 100%, 35%);
     }
@@ -384,7 +391,7 @@ button{
         margin-bottom: 3px;
     }
     .mast{
-        background-image: url(../img/600.jpg);
+        background-image: url(../img/large/600.jpg);
         height: auto;
         background-size: 100vw;
     }
