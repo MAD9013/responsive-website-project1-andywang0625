@@ -98,7 +98,6 @@ main{
 
 }
 section{
-    margin-right: 1em;
 }
 section p{
 
@@ -121,7 +120,7 @@ footer{
     font-size: 1em;
     display: flex;
     background-color:  rgb(80, 80, 80);
-    border-top:3px solid hsl(200, 100%, 50%);
+    border-top:3px solid hsl(44, 100%, 35%);
     padding-top: 2em;
     justify-content: space-between;
 }
@@ -134,7 +133,7 @@ footer{
     text-decoration:none;
 }
 .channels{
-//    border-left: 2px solid hsl(200, 100%, 50%);
+//    border-left: 2px solid hsl(44, 100%, 35%);
 }
 .foot section{
 
@@ -167,6 +166,15 @@ button{
             MEDIA QUERIES for layout
 *************************************************/
 @media (max-width: 599px){
+    .docs{
+        font-size: 2em;
+    }
+    .channels{
+        font-size: 2em;
+    }
+    .first-segment> h1{
+        font-size: 2em;
+    }
     .minor-segment{
         margin-top: 1em;
     }
@@ -183,7 +191,7 @@ button{
         flex-flow: column;
         font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
         text-decoration:none;
-        font-size: 2em;
+        font-size: 1em;
     }
     .main-link{
         border-bottom: 2px solid #888888;
@@ -191,7 +199,7 @@ button{
     nav > a:active,
     nav > a:focus,
     nav > a:hover{
-        color: hsl(133, 100%, 25%);
+        color: hsl(44, 100%, 35%);
     }
     footer{
         padding:1rem 1rem;
@@ -209,14 +217,14 @@ button{
         flex-flow: column;
     }
     .footer{
-        border-top:3px solid hsl(133, 100%, 25%);
+        border-top:3px solid hsl(44, 100%, 35%);
         text-decoration: none;
         justify-content:space-between;
     }
     .foot dd a:active,
     .foot dd a:focus,
     .foot dd a:hover{
-        color: hsl(133, 100%, 25%);
+        color: hsl(44, 100%, 35%);
         font-family: Poppins,Roboto, Helvetica, Arial,'PT Sans', sans-serif;
     }
     .foot dd{
@@ -231,21 +239,21 @@ button{
     nav > a:active,
     nav > a:focus,
     nav > a:hover{
-        color: hsl(137, 100%, 24%);
+        color: hsl(44, 100%, 35%);
     }
     .mast{
-        border-top: 1em solid hsl(137, 100%, 24%);
+        border-top: 1em solid hsl(44, 100%, 35%);
     }
     section > h1{
-        color: hsl(137, 100%, 24%);
-        font-size: 1em;
+        color: hsl(44, 100%, 35%);
+        font-size: 1.5em;
     }
     section > h2{
-        color: hsl(137, 100%, 24%);
+        color: hsl(44, 100%, 35%);
         font-size: 1em;
     }
     footer{
-        border-top:3px solid hsl(137, 100%, 24%);
+        border-top:3px solid hsl(44, 100%, 35%);
     }
     img{
         width:50%;
@@ -253,7 +261,7 @@ button{
         margin-right: 1em;
     }
     h1{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     h2{
         font-size:1rem;
@@ -261,6 +269,15 @@ button{
     .mast{
         background-image: url(../img/small/600.jpg);
         height: 200px;
+    }
+    input{
+        margin-bottom: 10px;
+    }
+    #city{
+      margin-bottom: 10px;
+    }
+    #comment{
+      margin-bottom: 10px;
     }
 }
 @media (min-width: 600px) and (max-width:999px){
@@ -273,7 +290,7 @@ button{
     .minor-segment{
         width: 43vw;
         margin-left: 0px;
-        margin-right: 0px;;
+        margin-right: 0px;
         margin-top: 2em;
     }
     .comments{
@@ -298,27 +315,27 @@ button{
         display: flex;
         flex-flow: column;
         padding-right: 2em;
-        margin-bottom: 1em;
+
     }
     textarea{
         height:10em;
     }
     .mast{
-        border-top: 1em solid hsl(194, 100%, 35%);
+        border-top: 1em solid hsl(44, 100%, 35%);
     }
     section > h1{
-        color: hsl(194, 100%, 35%);
+        color:hsl(44, 100%, 35%);
     }
     section > h2{
-        color: hsl(194, 100%, 35%);
+        color:hsl(44, 100%, 35%);
     }
     footer{
-        border-top:3px solid hsl(194, 100%, 35%);
+        border-top:3px solid hsl(44, 100%, 35%);
     }
     nav > a:active,
     nav > a:focus,
     nav > a:hover{
-        color: hsl(194, 100%, 35%);
+        color:hsl(44, 100%, 35%);
     }
     img{
         width:50%;
@@ -332,7 +349,13 @@ button{
         width:100%;
     }
     input{
-        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    #city{
+      margin-bottom: 10px;
+    }
+    #comment{
+      margin-bottom: 10px;
     }
 }
 @media (min-width: 1000px){
@@ -372,7 +395,6 @@ button{
         display: flex;
         flex-flow: column;
         padding-right: 2em;
-        margin-bottom: 1em;
     }
     textarea{
         height:10em;
@@ -388,7 +410,13 @@ button{
         margin-right: 1em;
     }
     input{
-        margin-bottom: 3px;
+        margin-bottom: 10px;
+    }
+    #city{
+      margin-bottom: 10px;
+    }
+    #comment{
+      margin-bottom: 10px;
     }
     .mast{
         background-image: url(../img/large/600.jpg);
